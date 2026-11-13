@@ -26,6 +26,4 @@ input,select,textarea{font:inherit;padding:.5rem;border:2px solid var(--inchiost
 .campo input,.campo textarea{display:block;width:100%;margin-top:.3rem}
 input[type=number]{width:5rem}
 footer{background:var(--inchiostro);color:var(--bianco);padding:2rem 0;font-size:1rem}
-.nastro{animation:srotola .7s ease-out both}
-@keyframes srotola{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.nastro{animation:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
