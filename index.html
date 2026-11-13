@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cantiere Nottambuli</title>
+<meta name="description" content="Cantiere Nottambuli: associazione. [Descrizione breve da completare]">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --carta:#eef0f3; --inchiostro:#14213d; --giallo:#ffc928; --grigio:#4a5568; --bianco:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--carta);color:var(--inchiostro);
+  font-family:"Source Serif 4",Georgia,serif;font-size:1.125rem;line-height:1.65}
+h1,h2,h3{font-family:"Archivo Black","Arial Black",Impact,sans-serif;font-weight:400;line-height:1.1;margin:0 0 .6em}
+a{color:var(--inchiostro)}
+a:focus-visible{outline:3px solid var(--giallo);outline-offset:3px}
+.wrap{max-width:760px;margin:0 auto;padding:0 1.25rem}
+
+header.top{background:var(--inchiostro);color:var(--bianco)}
+header.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.5rem;padding-top:1rem;padding-bottom:1rem}
+.logo{font-family:"Archivo Black","Arial Black",sans-serif;font-size:1.1rem;color:var(--bianco);text-decoration:none}
+nav a{color:var(--bianco);text-decoration:none;margin-right:1.1rem;font-size:1rem}
+nav a:last-child{margin-right:0}
+nav a:hover{color:var(--giallo)}
+
+.hero{padding:4.5rem 0 3.5rem}
+.hero h1{font-size:clamp(2.6rem,10vw,5.2rem);margin-bottom:.4em}
+.hero p{font-size:1.3rem;max-width:34ch;margin:0 0 1.6rem}
+.btn{display:inline-block;background:var(--giallo);color:var(--inchiostro);font-family:"Archivo Black","Arial Black",sans-serif;
+  text-decoration:none;padding:.85rem 1.4rem;border:3px solid var(--inchiostro)}
+.btn:hover{background:var(--inchiostro);color:var(--giallo)}
+
+.nastro{height:22px;background:repeating-linear-gradient(-45deg,var(--giallo) 0 22px,var(--inchiostro) 22px 44px)}
+
+section{padding:3.5rem 0}
+section h2{font-size:clamp(1.7rem,5vw,2.3rem)}
+.alt{background:var(--bianco)}
+ul.eventi{list-style:none;margin:0;padding:0}
+ul.eventi li{padding:1rem 0;border-top:2px solid var(--inchiostro)}
+ul.eventi li:last-child{border-bottom:2px solid var(--inchiostro)}
+ul.eventi strong{display:block;font-family:"Archivo Black","Arial Black",sans-serif;font-weight:400}
+.nota{color:var(--grigio);font-size:1rem}
+footer{background:var(--inchiostro);color:var(--bianco);padding:2rem 0;font-size:1rem}
+footer a{color:var(--giallo)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#">Cantiere Nottambuli</a>
+    <nav aria-label="Menu principale">
+      <a href="#chi-siamo">Chi siamo</a>
+      <a href="#attivita">Attività</a>
+      <a href="#associarsi">Associarsi</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Cantiere Nottambuli</h1>
+      <!-- MODIFICA: una frase che riassume cosa fate -->
+      <p>Un’associazione che costruisce, di notte e di giorno, [la vostra missione in una frase].</p>
+      <a class="btn" href="#associarsi">Diventa socio</a>
+    </div>
+  </div>
+  <div class="nastro" aria-hidden="true"></div>
+
+  <section id="chi-siamo">
+    <div class="wrap">
+      <h2>Chi siamo</h2>
+      <!-- MODIFICA: chi siete, da quando esistete, dove operate -->
+      <p>Cantiere Nottambuli è un’associazione nata nel [anno] a [città]. Ci occupiamo di [ambito: cultura, sport, volontariato…].</p>
+      <p>Qui puoi scrivere in poche righe la storia dell’associazione e gli obiettivi che vi siete dati.</p>
+    </div>
+  </section>
+
+  <section id="attivita" class="alt">
+    <div class="wrap">
+      <h2>Attività</h2>
+      <!-- MODIFICA: copia e incolla un blocco <li> per ogni attività o evento -->
+      <ul class="eventi">
+        <li><strong>Attività 1</strong>Breve descrizione. Quando e dove si svolge.</li>
+        <li><strong>Attività 2</strong>Breve descrizione. Quando e dove si svolge.</li>
+        <li><strong>Prossimo evento: [data]</strong>Titolo, luogo e orario dell’evento.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="associarsi">
+    <div class="wrap">
+      <h2>Come associarsi</h2>
+      <!-- MODIFICA: quota, modalità, requisiti -->
+      <p>Per diventare socio basta [scrivere a indirizzo email / compilare un modulo / venire in sede]. La quota associativa annuale è di [importo] euro.</p>
+      <p class="nota">Scrivici per ricevere il modulo di iscrizione.</p>
+    </div>
+  </section>
+
+  <section id="contatti" class="alt">
+    <div class="wrap">
+      <h2>Contatti</h2>
+      <!-- MODIFICA: email, social, indirizzo -->
+      <p>Email: <a href="mailto:info@esempio.it">info@esempio.it</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/">@cantierenottambuli</a></p>
+      <p>Sede: Via [nome], [numero], [città]</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    © 2026 Cantiere Nottambuli · [Codice fiscale / dati associazione]
+  </div>
+</footer>
+
+</body>
+</html>
